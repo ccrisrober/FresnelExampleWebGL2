@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<head>
+  		<meta charset="utf-8" />
+  		<title>Fresnel Example in WebGL2</title>
+		<style>
+		#myCanvas {
+	        top: 50%;
+	        left: 42.5%;
+	        margin-top: -512px;
+	        margin-left: -640px;
+	        position: fixed
+		}
+		body {
+			background-color: #eee;
+		}
+		#repo-card__image-wrap {
+		    background-position: center center!important;
+		    background-size: cover!important;
+		}
+		</style>
+	</head>
+	<body>
+	    <canvas id="myCanvas" width="1280" height="1024"></canvas>
+		<script src="ShaderProgram.js"></script>
+		<script src="camera.js"></script>
+		<script type="text/javascript" src="gl-matrix-min.js"></script>
+		<script type="text/javascript" src="dat.gui.js"></script>
+		<script type="text/javascript" src="Stats.min.js"></script>
+		<script src="app.js"></script>
+		<script type="text/javascript" src="repo-card.min.js"></script>
+		<script>
+			RepoCard
+			.configure({
+				repo: 'FresnelExampleWebGL2',
+				username: 'maldicion069',
+				title: 'Fresnel Example in WebGL2',
+				subtitle: '@maldicion069',
+				info: 'A quick example using Float Depth Map to simulate Glass models',
+				thumb: 'url(https://avatars2.githubusercontent.com/u/6024024?v=3&s=600)',
+				background: 'url(FresnelRim.png)',
+				position: {
+					bottom: 25,
+					right: 25
+				}
+			});
+		</script>
+	</body>
+</html>
